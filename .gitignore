@@ -1,0 +1,13 @@
+# Build output
+.build/
+build/
+.swiftpm/
+*.xcodeproj/
+DerivedData/
+
+# macOS
+.DS_Store
+
+# Never commit the NDI SDK (its license forbids redistribution)
+*.dylib
+Processing.NDI.*.h
