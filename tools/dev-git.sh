@@ -46,6 +46,12 @@ case "$action" in
     # Replace unpushed local commits with one commit on top of origin/main (working tree unchanged).
     git reset --soft origin/main 2>&1 && git commit -F build/.commit-msg 2>&1
     ;;
+  repo-info)
+    GH="$(command -v gh || echo /opt/homebrew/bin/gh)"; [ -x "$GH" ] || GH="$HOME/.homebrew/bin/gh"
+    "$GH" api users/millstonesolutions --jq '"account type: \(.type)"' 2>&1
+    "$GH" api repos/millstonesolutions/Millstone-HX-Bridge --jq '"visibility: \(.visibility)  forking: \(.allow_forking)  permissions(me): \(.permissions)"' 2>&1
+    "$GH" api repos/millstonesolutions/Millstone-HX-Bridge/collaborators --jq '.[] | "collaborator: \(.login) \(.role_name)"' 2>&1
+    ;;
   status)
     git status --short 2>&1; echo "== log"; git log --oneline -8 2>&1
     ;;
