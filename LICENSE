@@ -1,0 +1,110 @@
+Millstone Solutions HX Bridge — Church and Ministry Use License
+Version 1.0
+
+Copyright (c) 2026 Millstone Solutions LLC. All rights reserved except as granted below.
+
+This is a source-available license. It is not an open-source license.
+
+1. DEFINITIONS
+
+"Software" means the source code, documentation, build scripts and any compiled
+builds of Millstone Solutions HX Bridge published by the Licensor, excluding the
+Third-Party Components described in Section 8.
+
+"Licensor" means Millstone Solutions LLC.
+
+"Qualifying Organization" means a Christian church or congregation, or a
+non-profit Christian ministry, including missions, parachurch ministries,
+Christian schools and Christian camps, whose primary purpose is Christian
+worship, teaching or ministry.
+
+"Official Source" means the Software as published by the Licensor at
+https://github.com/millstonesolutions/Millstone-HX-Bridge.
+
+2. FREE USE BY QUALIFYING ORGANIZATIONS
+
+The Licensor grants each Qualifying Organization a free, worldwide,
+non-exclusive, non-transferable license to build the Software from the Official
+Source, install it on computers the organization owns or controls, and use it
+for any of the organization's activities, including worship services, events,
+recordings and livestreams.
+
+This license covers the Software as published by the Licensor, without
+modification. Changing the Software's settings and configuration is not a
+modification.
+
+3. INSTALLERS AND INTEGRATORS
+
+Any person or business may install, configure, maintain and support the
+Software on behalf of a Qualifying Organization, for use only by that
+organization. They may charge for their own services, but may not charge for the
+Software itself or distribute it to anyone else.
+
+4. EVALUATION, TESTING AND CONTRIBUTIONS
+
+Anyone may view the Official Source. Anyone may also download, build, modify
+and run the Software solely to evaluate or test it, or to develop contributions
+to this project, and may fork the repository on GitHub solely to propose those
+contributions to the Licensor. This Section does not permit production use of
+the Software, or use of modified versions, by anyone except as allowed in
+Sections 2 and 3.
+
+5. RESTRICTIONS
+
+Except as expressly allowed above, you may not:
+  (a) sell, rent, lease, sublicense or otherwise charge for the Software;
+  (b) distribute copies of the Software, modified or unmodified;
+  (c) use a modified version of the Software in production;
+  (d) remove or alter copyright, license or attribution notices; or
+  (e) use the names "Millstone Solutions" or "HX Bridge", or the Licensor's
+      logos, to endorse or promote any product or service without written
+      permission.
+
+Any use not expressly allowed by this license, including use by organizations
+that are not Qualifying Organizations, requires written permission from the
+Licensor. To ask, open an issue at the Official Source.
+
+6. CONTRIBUTIONS
+
+By submitting a contribution (for example, a pull request, patch or suggested
+code) to the Licensor, you confirm that you have the right to submit it, and you
+grant the Licensor a perpetual, worldwide, irrevocable, royalty-free license to
+use, modify, distribute and relicense that contribution as part of the Software
+or otherwise.
+
+7. TERMINATION
+
+Your rights under this license end automatically if you breach it. If you fix
+the breach within 30 days of learning of it, your rights are reinstated, unless
+the Licensor has notified you in writing that they are terminated.
+
+8. THIRD-PARTY COMPONENTS
+
+The Software includes or depends on components owned by others. Those
+components are governed by their own licenses, not by this one:
+  - libopus (Sources/COpus), under the BSD license in Sources/COpus/COPYING.
+  - The NDI(R) Advanced SDK, which is NOT included. Each user must obtain it
+    from, and comply with the license terms of, Vizrt NDI AB, including any
+    License ID requirement. NDI(R) is a registered trademark of Vizrt NDI AB.
+    The Software is not affiliated with or endorsed by Vizrt NDI AB.
+  - Video and audio codecs (H.264, H.265/HEVC, AAC) may be subject to patent
+    licensing by their owners.
+See THIRD_PARTY_NOTICES.md.
+
+9. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+10. LIMITATION OF LIABILITY
+
+TO THE EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR ITS USE, INCLUDING ANY
+INTERRUPTION OF A SERVICE, EVENT, RECORDING OR LIVESTREAM.
+
+11. GOVERNING LAW
+
+This license is governed by the laws of the State of Texas, United States,
+without regard to its conflict-of-laws rules.

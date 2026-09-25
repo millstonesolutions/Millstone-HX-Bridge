@@ -29,6 +29,7 @@ which typically cuts a 1080p feed from 100+ Mbps to roughly 3–15 Mbps.
 - [Development](#development)
 - [Testing checklist](#testing-checklist)
 - [Known limitations and ideas](#known-limitations-and-ideas)
+- [License](#license)
 - [Credits and legal](#credits-and-legal)
 
 ---
@@ -88,9 +89,9 @@ cd Millstone-HX-Bridge
 | `--clean` | Deletes build caches first (use after moving the folder or updating the SDK) |
 | `--selftest` | Runs the Opus channel-mapping round-trip test (see [Audio](#audio)) |
 
-The build is ad-hoc signed, which is fine for your own Mac. It is **not** notarized; if you send the built app to
-someone else, macOS will block it until they allow it in System Settings → Privacy & Security.
-Sharing the source and building locally avoids that.
+The build is ad-hoc signed for the Mac it's built on and is **not** notarized. Each church or tester builds it
+from this repository (the license doesn't allow passing built copies around), which also avoids macOS's
+Gatekeeper warnings.
 
 **First launch:** macOS asks whether *HX Bridge* may find devices on your local network. Click **Allow**,
 or source discovery won't work. You can change this later in System Settings → Privacy & Security → Local Network.
@@ -336,9 +337,26 @@ When you try it, please note your Mac model, macOS version, NDI SDK version and 
 - Opus over 16 channels is untested; AAC is stereo only.
 - Ideas: HX → High Bandwidth direction, HEVC with alpha, per-bridge input groups, a web control page, notarized builds.
 
+## License
+Free for **Christian churches and ministries** (including missions, parachurch ministries, Christian schools and
+camps) under the [Church and Ministry Use License](LICENSE). In short:
+
+- **Qualifying churches and ministries** may build it from this repository and use it for free for anything they do:
+  services, events, recordings and livestreams. They use it as published, without modifying it (changing settings is fine).
+- **AV installers and integrators** may set it up and support it for a qualifying church, and charge for their own
+  time, but not for the software.
+- **Anyone** may read the code, and build, modify and test it to evaluate it or to contribute changes back through
+  GitHub pull requests.
+- **Everything else** (other organizations, selling it, redistributing it, running modified versions in production)
+  needs written permission from Millstone Solutions. Open an issue to ask.
+- **Contributions** submitted to the project may be used and relicensed by Millstone Solutions.
+
+This is a source-available license, not an open-source one. The NDI SDK is not included and is licensed separately
+by Vizrt NDI AB; libopus keeps its BSD license. The [LICENSE](LICENSE) file is the binding text; this summary is
+for convenience.
+
 ## Credits and legal
-© 2026 Millstone Solutions LLC. No open-source license has been chosen yet; until one is added, all rights are reserved
-and the code is shared with invited testers only.
+© 2026 Millstone Solutions LLC.
 
 NDI® is a registered trademark of Vizrt NDI AB. This project is not affiliated with, sponsored by or endorsed by
 Vizrt NDI AB. ProPresenter is a trademark of Renewed Vision. Opus is © Xiph.Org Foundation and contributors (BSD).
